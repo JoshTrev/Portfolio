@@ -32,7 +32,6 @@ function App() {
   return (
     <>
       <Header
-        content={headerProp.content}
         onClick={handleButtonClick}
       />
       <main>
