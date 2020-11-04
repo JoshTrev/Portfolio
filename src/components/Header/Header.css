@@ -1,0 +1,19 @@
+button {
+    float: right;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    margin-left: 1rem;
+    outline: none !important;
+    box-shadow: none;
+}
+
+.buttonActive{
+    color: #fff;
+}
+
+.buttonNotActive{
+    color: rgba(255,255,255,.5);
+}
+
+
