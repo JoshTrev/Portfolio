@@ -1,0 +1,32 @@
+#contactContainer{
+    max-width: 750px;
+    float: left;
+    margin-top: 7.5rem;
+    margin-left: 4rem;
+    padding-top: 0.4rem;
+}
+
+#submitButton{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+
+    display: inline-block;
+    font-weight: 400;
+
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    
+    margin-bottom: 1rem;
+}
