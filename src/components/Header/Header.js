@@ -2,6 +2,9 @@ import React from "react";
 import "./Header.css";
 
 function Header(props) {
+
+    
+
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
@@ -12,13 +15,13 @@ function Header(props) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
-                            <button onClick={props.onClick} id="AboutMe" className="buttonActive">About</button>
+                            <button onClick={props.onClick} id="AboutMe" className={props.currentPage === "AboutMe" ? "buttonActive" : "buttonNotActive"}>About</button>
                         </li>
                         <li className="nav-item">
-                            <button onClick={props.onClick} id="Portfolio" className="buttonNotActive">Portfolio</button>
+                            <button onClick={props.onClick} id="Portfolio" className={props.currentPage === "Portfolio" ? "buttonActive" : "buttonNotActive"}>Portfolio</button>
                         </li>
                         <li className="nav-item">
-                            <button onClick={props.onClick} id="Contact" className="buttonNotActive">Contact</button>
+                            <button onClick={props.onClick} id="Contact" className={props.currentPage === "Contact" ? "buttonActive" : "buttonNotActive"}>Contact</button>
                         </li>
                     </ul>
                 </div>

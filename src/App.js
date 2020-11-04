@@ -33,6 +33,7 @@ function App() {
     <>
       <Header
         onClick={handleButtonClick}
+        currentPage={page.currentPage}
       />
       <main>
         {page.currentPage === "AboutMe" &&
