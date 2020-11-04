@@ -1,0 +1,20 @@
+#indexContainer{
+    max-width: 750px;
+    float: left;
+    margin-top: 7.5rem;
+    margin-left: 4rem;
+}
+
+.indexText{
+    font-size: 1.45rem;
+}
+
+.indexTextSmall{
+    font-size: 100%;
+    margin-bottom: 1rem;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}

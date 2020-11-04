@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import AboutMe from "./pages/AboutMe";
-import Contact from "./pages/Contact";
-import Portfolio from "./pages/Portfolio";
+import AboutMe from "./pages/AboutMe/AboutMe";
+import Contact from "./pages/Contact/Contact";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 function App() {
   const [page, setPage] = useState({
     currentPage: "AboutMe"
   });
   const [headerProp, setheaderProp] = useState({
-    content: "Header Test!"
+    img: "./assets/img/JoshPic.JPG"
   });
   const [footerProp, setfooterProp] = useState({
     content: "Footer Test!"
@@ -37,7 +37,7 @@ function App() {
       />
       <main>
         {page.currentPage === "AboutMe" &&
-          <AboutMe />
+          <AboutMe aboutMeImg={headerProp.img}/>
         }
         {page.currentPage === "Contact" &&
           <Contact />
