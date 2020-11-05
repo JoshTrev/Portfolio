@@ -2,9 +2,6 @@ import React from "react";
 import "./Header.css";
 
 function Header(props) {
-
-    
-
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">

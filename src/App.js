@@ -5,6 +5,7 @@ import AboutMe from "./pages/AboutMe/AboutMe";
 import Contact from "./pages/Contact/Contact";
 import Portfolio from "./pages/Portfolio/Portfolio";
 
+
 function App() {
   const [page, setPage] = useState({
     currentPage: "AboutMe"
@@ -14,6 +15,14 @@ function App() {
   });
   const [footerProp, setfooterProp] = useState({
     content: "Footer Test!"
+  });
+  const [portfolioProp, setportfolioProp] = useState({
+    img1: "./assets/img/EmployeeDirectory.png",
+    img2: "./assets/img/Trip-Wishlist.png",
+    img3: "./assets/img/BetterMeImg.png",
+    img4: "./assets/img/BurgerApp.png",
+    img5: "./assets/img/WeatherDashboardImg.png",
+    img6: "./assets/img/PasswordGeneratorImg.png",
   });
 
   function handleButtonClick(event) {
@@ -27,6 +36,8 @@ function App() {
     else if (buttonName === "Portfolio") {
       setPage({ currentPage: buttonName });
     }
+
+    console.log(portfolioProp.img1);
   }
 
   return (
@@ -37,15 +48,28 @@ function App() {
       />
       <main>
         {page.currentPage === "AboutMe" &&
-          <AboutMe aboutMeImg={headerProp.img}/>
+          <AboutMe aboutMeImg={headerProp.img} />
         }
         {page.currentPage === "Contact" &&
           <Contact />
         }
         {page.currentPage === "Portfolio" &&
-          <Portfolio />
+          <Portfolio
+            portfolioImg1={portfolioProp.img1}
+            portfolioImg2={portfolioProp.img2}
+            portfolioImg3={portfolioProp.img3}
+            portfolioImg4={portfolioProp.img4}
+            portfolioImg5={portfolioProp.img5}
+            portfolioImg6={portfolioProp.img6}
+          />
         }
       </main>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
       <Footer content={footerProp.content} />
     </>
   );

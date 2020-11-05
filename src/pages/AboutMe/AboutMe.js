@@ -5,7 +5,7 @@ function AboutMe(props) {
     return (
         <>
             <main className="container bg-light border rounded" id="indexContainer">
-                <h1 className="text-secondary">About Me</h1>
+                <h1>About Me</h1>
                 <section className="row row-cols-2 align-items-center">
                     <div className="col">
                         <img className="border rounded" id="JoshPic" src={props.aboutMeImg} width="100%" />
