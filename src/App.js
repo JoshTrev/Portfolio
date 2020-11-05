@@ -86,11 +86,6 @@ function App() {
         }
       </main>
 
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
       <Footer content={footerProp.content} />
     </>
   );

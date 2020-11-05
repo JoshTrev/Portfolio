@@ -8,4 +8,10 @@
 .portfolioImg{
     max-width: 100%;
     max-height: 100%;
-  }
+}
+
+#blankspace{
+    height: 1150px;
+    width: 100%;
+    background-color: transparent;
+}

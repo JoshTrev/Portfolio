@@ -50,6 +50,7 @@ function Portfolio(props) {
                     />
                 </section>
             </main>
+            <div id="blankspace" />
         </>
     )
 }
