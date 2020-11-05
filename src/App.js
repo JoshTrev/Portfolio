@@ -5,7 +5,6 @@ import AboutMe from "./pages/AboutMe/AboutMe";
 import Contact from "./pages/Contact/Contact";
 import Portfolio from "./pages/Portfolio/Portfolio";
 
-
 function App() {
   const [page, setPage] = useState({
     currentPage: "AboutMe"
@@ -36,8 +35,29 @@ function App() {
     else if (buttonName === "Portfolio") {
       setPage({ currentPage: buttonName });
     }
+  }
 
-    console.log(portfolioProp.img1);
+  function handleButtonClick2(event) {
+    const buttonName = event.target.id;
+
+    if (buttonName === "1") {
+      window.open("https://joshtrev.github.io/Employee-Directory/", '_blank');
+    }
+    else if (buttonName === "2") {
+      window.open("https://trip-wishlist.herokuapp.com/", '_blank');
+    }
+    else if (buttonName === "3") {
+      window.open("https://joshtrev.github.io/BetterMe/", '_blank');
+    }
+    else if (buttonName === "4") {
+      window.open("https://github.com/JoshTrev/Eat-Da-Burger-", '_blank');
+    }
+    else if (buttonName === "5") {
+      window.open("https://joshtrev.github.io/Weather-Dashboard/", '_blank');
+    }
+    else if (buttonName === "6") {
+      window.open("https://joshtrev.github.io/PasswordGeneratorHomework/", '_blank');
+    }
   }
 
   return (
@@ -61,6 +81,7 @@ function App() {
             portfolioImg4={portfolioProp.img4}
             portfolioImg5={portfolioProp.img5}
             portfolioImg6={portfolioProp.img6}
+            onClick={handleButtonClick2}
           />
         }
       </main>
