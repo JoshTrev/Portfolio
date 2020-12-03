@@ -4,20 +4,40 @@ import "./AboutMe.css";
 function AboutMe(props) {
     return (
         <>
-            <main className="container bg-light border rounded" id="indexContainer">
-                <h1>About Me</h1>
-                <section className="row row-cols-2 align-items-center">
-                    <div className="col">
+            <main className={props.dropDownActive === "Active" ? "DropDownActiveAboutMe container bg-light border rounded" : "DropDownNotActiveAboutMe container bg-light border rounded"} id="indexContainer">
+
+                <div id="Header">
+                    <h1>About Me</h1>
+                </div>
+
+                <section id="section">
+
+                    <div className="col" id="JoshPic-container">
                         <img className="border rounded" id="JoshPic" src={props.aboutMeImg} width="100%" />
                     </div>
-                    <div className="col border-top border-bottom">
-                        <p className="indexText">My name is Josh Trevethan. I'm 22 years old and currently learning coding and web development. I live in King of Prussia, Pennsylvania. I've always been interested in coding and finally decided to jump into it and get started a few months back. I'm currently in the process of completing the Penn LPS Coding Boot Camp. Every day I'm excited to keep learning and improving. </p>
+
+                    <div className="col border-top border-bottom" id="Josh-text-container">
+                        
+                        <div className="col border-bottom aboutbox">
+                            <p className="indexText">My name is Josh Trevethan. I'm 22 years old and have recently finished the Penn LPS Full-Time Coding Boot Camp. I live in King of Prussia, Pennsylvania.</p>
+                        </div>
+
+                        <div className="col border-top border-bottom aboutbox">
+                            <p className="indexText">I'm motivated, friendly, outgoing, and an energetic team player with a hard-working and driven nature.
+                        </p>
+                        </div>
+
+                        <div className="col border-top aboutbox">
+                            <p className="indexText">I'm excited to utilize the many skills I've learned including HTML5, CSS3, JavaScript, JQuery, JSON, AJAX, Express.js, React.js, MongoDB, and Mongoose.js as pieces of the MERN stack.
+                        </p>
+                        </div>
                     </div>
+
                 </section>
 
                 <br></br>
 
-                <section className="row row-cols-2 align-items-center">
+                <section className="row row-cols-2 align-items-center" id="indexTextSmall">
                     <div className="col">
                         <p className="indexTextSmall">Email: joshj438t@gmail.com</p>
                     </div>
@@ -26,6 +46,11 @@ function AboutMe(props) {
                     </div>
                 </section>
             </main>
+
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
         </>
     )
 }

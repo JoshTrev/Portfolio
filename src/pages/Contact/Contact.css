@@ -1,8 +1,22 @@
 #contactContainer{
-    max-width: 750px;
-    float: left;
-    margin-top: 7.5rem;
-    margin-left: 4rem;
+    width: 90%;
+    max-width: 1000px;
+    /* margin-top: 7.5rem; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DropDownActiveContact{
+    margin-top: 2.5rem;
+}
+
+.DropDownNotActiveContact{
+    margin-top: 6rem;
+}
+
+#Header2{
+    width: 100%;
+    text-align:center;
     padding-top: 0.4rem;
 }
 

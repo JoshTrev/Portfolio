@@ -1,12 +1,28 @@
 #indexContainer{
-    max-width: 750px;
-    float: left;
-    margin-top: 7.5rem;
-    margin-left: 4rem;
+    width: 90%;
+    max-width: 1000px;
+    /* margin-top: 6rem; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.DropDownActiveAboutMe{
+    margin-top: 2.5rem;
+}
+
+.DropDownNotActiveAboutMe{
+    margin-top: 6rem;
 }
 
 .indexText{
     font-size: 1.45rem;
+    text-indent: 50px;
+}
+
+#indexTextSmall{
+    clear: both;
+    text-align: center;
+    font-weight: 500;
 }
 
 .indexTextSmall{
@@ -17,4 +33,80 @@
 #JoshPic{
     max-width: 100%;
     max-height: 100%;
+}
+
+#Header{
+    width: 100%;
+    text-align:center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.aboutbox{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+@media (min-width: 0px){
+    .indexText{
+        font-size: 3.5vw;
+    }
+
+    .aboutbox{
+        padding-top: 4vw;
+        padding-bottom: 2vw;
+    }
+
+    #JoshPic-container{
+        float: left;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    
+    #Josh-text-container{
+        clear: both;
+        width: 100%;
+    }
+
+    #indexTextSmall{
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 700px){
+    .indexText{
+        font-size: 2vw;
+    }
+
+    .aboutbox{
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+
+    #JoshPic-container{
+        float: left;
+        width: 50%;
+        padding-bottom: 2rem;
+    }
+    
+    #Josh-text-container{
+        float: left;
+        clear: none;
+        width: 50%;
+    }
+
+    #indexTextSmall{
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 1128px){
+    .indexText{
+        font-size: 1.45rem;
+    }
+
+    .aboutbox{
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
 }

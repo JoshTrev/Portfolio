@@ -1,8 +1,22 @@
 #portfolioContainer{
+    width: 90%;
     max-width: 1000px;
-    float: left;
-    margin-top: 7.5rem;
-    margin-left: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Header3{
+    width: 100%;
+    text-align:center;
+    padding-top: 0.4rem;
+}
+
+.DropDownActivePortfolio{
+    margin-top: 2.5rem;
+}
+
+.DropDownNotActivePortfolio{
+    margin-top: 6rem;
 }
 
 .portfolioImg{
@@ -14,4 +28,85 @@
     height: 1150px;
     width: 100%;
     background-color: transparent;
+}
+
+@media (min-width: 0px){
+    #Project1{
+        float: left;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #Project2{
+        clear: both;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #Project3{
+        clear: both;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #Project4{
+        clear: both;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #Project5{
+        clear: both;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #Project6{
+        clear: both;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #portfolioContainer{
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 700px){
+    #Project1{
+        clear: none;
+        float: left;
+        width: 50%;
+    }
+    #Project2{
+        clear: none;
+        float: left;
+        width: 50%;
+    }
+    #Project3{
+        clear: both;
+        float: left;
+        width: 50%;
+    }
+    #Project4{
+        clear: none;
+        float: left;
+        width: 50%;
+    }
+    #Project5{
+        clear: both;
+        float: left;
+        width: 50%;
+    }
+    #Project6{
+        clear: none;
+        float: left;
+        width: 50%;
+    }
+
+    #portfolioContainer{
+        padding-bottom: 0rem;
+        min-height: 60rem;
+    }
 }

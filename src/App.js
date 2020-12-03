@@ -9,6 +9,9 @@ function App() {
   const [page, setPage] = useState({
     currentPage: "AboutMe"
   });
+  const [dropDown, setDropDown] = useState({
+    dropDownActive: "NotActive"
+  });
   const [headerProp, setheaderProp] = useState({
     img: "./assets/img/JoshPic.JPG"
   });
@@ -26,14 +29,25 @@ function App() {
 
   function handleButtonClick(event) {
     const buttonName = event.target.id;
-    if (buttonName === "AboutMe") {
-      setPage({ currentPage: buttonName });
+    if (buttonName === "AboutMe" || buttonName === "AboutMe2") {
+      setPage({ currentPage: "AboutMe" });
     }
-    else if (buttonName === "Contact") {
-      setPage({ currentPage: buttonName });
+    else if (buttonName === "Contact" || buttonName === "Contact2") {
+      setPage({ currentPage: "Contact" });
     }
-    else if (buttonName === "Portfolio") {
-      setPage({ currentPage: buttonName });
+    else if (buttonName === "Portfolio" || buttonName === "Portfolio2") {
+      setPage({ currentPage: "Portfolio" });
+    }
+  }
+
+  function handleButtonClickDropDown(event) {
+    if (dropDown.dropDownActive === "NotActive"){
+      setDropDown({ dropDownActive: "Active" });
+      // console.log("Setting Active!");
+    }
+    else{
+      setDropDown({ dropDownActive: "NotActive" });
+      // console.log("Deactivating");
     }
   }
 
@@ -64,14 +78,17 @@ function App() {
     <>
       <Header
         onClick={handleButtonClick}
+        onClickDropDown={handleButtonClickDropDown}
         currentPage={page.currentPage}
+        dropDownActive={dropDown.dropDownActive}
       />
       <main>
         {page.currentPage === "AboutMe" &&
-          <AboutMe aboutMeImg={headerProp.img} />
+          <AboutMe aboutMeImg={headerProp.img} 
+          dropDownActive={dropDown.dropDownActive}/>
         }
         {page.currentPage === "Contact" &&
-          <Contact />
+          <Contact dropDownActive={dropDown.dropDownActive}/>
         }
         {page.currentPage === "Portfolio" &&
           <Portfolio
@@ -82,6 +99,7 @@ function App() {
             portfolioImg5={portfolioProp.img5}
             portfolioImg6={portfolioProp.img6}
             onClick={handleButtonClick2}
+            dropDownActive={dropDown.dropDownActive}
           />
         }
       </main>
