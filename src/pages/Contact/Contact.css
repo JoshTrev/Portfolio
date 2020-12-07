@@ -44,3 +44,20 @@
     
     margin-bottom: 1rem;
 }
+
+.Sent{
+    display: none !important;
+}
+
+#thankYouMessage{
+    color:#343a40;
+    /* background-color: #343a40; */
+    text-align: center;
+    font-size: 25px;
+    margin-top: 11rem;
+    margin-bottom: 11rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
