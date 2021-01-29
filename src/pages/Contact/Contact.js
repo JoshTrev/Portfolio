@@ -23,7 +23,7 @@ function Contact(props) {
 
     return (
         <>
-            <main className={props.dropDownActive === "Active" ? "DropDownActiveContact container bg-light border rounded container1" : "DropDownNotActiveContact container bg-light border rounded container1"} id="contactContainer">
+            <main className="container bg-light border rounded container1" id="contactContainer">
 
                 <form onSubmit={sendEmail} >
 

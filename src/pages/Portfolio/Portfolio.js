@@ -5,7 +5,7 @@ import "./Portfolio.css";
 function Portfolio(props) {
     return (
         <>
-            <main className={props.dropDownActive === "Active" ? "DropDownActivePortfolio container bg-light border rounded container2" : "DropDownNotActivePortfolio container bg-light border rounded container2"} id="portfolioContainer">
+            <main className="container bg-light border rounded container2" id="portfolioContainer">
 
                 <div id="Header3">
                     <h1>Portfolio</h1>

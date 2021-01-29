@@ -4,7 +4,7 @@ import "./AboutMe.css";
 function AboutMe(props) {
     return (
         <>
-            <main className={props.dropDownActive === "Active" ? "DropDownActiveAboutMe container bg-light border rounded" : "DropDownNotActiveAboutMe container bg-light border rounded"} id="indexContainer">
+            <main className="container bg-light border rounded" id="indexContainer">
 
                 <div id="Header">
                     <h1>About Me</h1>

@@ -1,0 +1,15 @@
+.backgroundImg{
+    background: url("./assets/img/BackgroundPic.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.blockSmall{
+    height: 2.5rem;
+}
+
+.blockLarge{
+    height: 6rem;
+}

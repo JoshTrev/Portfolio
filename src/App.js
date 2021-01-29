@@ -5,6 +5,16 @@ import AboutMe from "./pages/AboutMe/AboutMe";
 import Contact from "./pages/Contact/Contact";
 import Portfolio from "./pages/Portfolio/Portfolio";
 
+import "./App.css"
+
+import JoshPicImg from "./assets/img/JoshPic.JPG";
+import EmployeeDirectoryImg from "./assets/img/EmployeeDirectory.png";
+import TripWishlistImg from "./assets/img/Trip-Wishlist.png";
+import BetterMeImg from "./assets/img/BetterMeImg.png";
+import BurgerAppImg from "./assets/img/BurgerApp.png";
+import WeatherDashboardImg from "./assets/img/WeatherDashboardImg.png";
+import PasswordGeneratorImg from "./assets/img/PasswordGeneratorImg.png";
+
 function App() {
   const [page, setPage] = useState({
     currentPage: "AboutMe"
@@ -13,18 +23,18 @@ function App() {
     dropDownActive: "NotActive"
   });
   const [headerProp, setheaderProp] = useState({
-    img: "./assets/img/JoshPic.JPG"
+    img: JoshPicImg
   });
   const [footerProp, setfooterProp] = useState({
     content: "Footer Test!"
   });
   const [portfolioProp, setportfolioProp] = useState({
-    img1: "./assets/img/EmployeeDirectory.png",
-    img2: "./assets/img/Trip-Wishlist.png",
-    img3: "./assets/img/BetterMeImg.png",
-    img4: "./assets/img/BurgerApp.png",
-    img5: "./assets/img/WeatherDashboardImg.png",
-    img6: "./assets/img/PasswordGeneratorImg.png",
+    img1: EmployeeDirectoryImg,
+    img2: TripWishlistImg,
+    img3: BetterMeImg,
+    img4: BurgerAppImg,
+    img5: WeatherDashboardImg,
+    img6: PasswordGeneratorImg,
   });
 
   function handleButtonClick(event) {
@@ -75,7 +85,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="backgroundImg">
       <Header
         onClick={handleButtonClick}
         onClickDropDown={handleButtonClickDropDown}
@@ -83,12 +93,12 @@ function App() {
         dropDownActive={dropDown.dropDownActive}
       />
       <main>
+        <div className={dropDown.dropDownActive === "Active" ? "blockSmall" : "blockLarge"}></div>
         {page.currentPage === "AboutMe" &&
-          <AboutMe aboutMeImg={headerProp.img} 
-          dropDownActive={dropDown.dropDownActive}/>
+          <AboutMe aboutMeImg={headerProp.img} />
         }
         {page.currentPage === "Contact" &&
-          <Contact dropDownActive={dropDown.dropDownActive}/>
+          <Contact />
         }
         {page.currentPage === "Portfolio" &&
           <Portfolio
@@ -99,13 +109,12 @@ function App() {
             portfolioImg5={portfolioProp.img5}
             portfolioImg6={portfolioProp.img6}
             onClick={handleButtonClick2}
-            dropDownActive={dropDown.dropDownActive}
           />
         }
       </main>
 
       <Footer content={footerProp.content} />
-    </>
+    </div>
   );
 }
 
