@@ -6,4 +6,4 @@ This portfolio was created using React.js. It is a one page application build to
 
 https://joshtrev.github.io/Portfolio/
 
-![Image of Application](./public/assets/img/DemoImage.png)
+![Image of Application](./src/assets/img/DemoImage.png)

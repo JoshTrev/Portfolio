@@ -14,6 +14,7 @@ import BetterMeImg from "./assets/img/BetterMeImg.png";
 import BurgerAppImg from "./assets/img/BurgerApp.png";
 import WeatherDashboardImg from "./assets/img/WeatherDashboardImg.png";
 import PasswordGeneratorImg from "./assets/img/PasswordGeneratorImg.png";
+import CodingCoachImg from "./assets/img/CodingCoachImage.png";
 
 function App() {
   const [page, setPage] = useState({
@@ -29,12 +30,13 @@ function App() {
     content: "Footer Test!"
   });
   const [portfolioProp, setportfolioProp] = useState({
-    img1: EmployeeDirectoryImg,
+    img1: CodingCoachImg,
     img2: TripWishlistImg,
     img3: BetterMeImg,
-    img4: BurgerAppImg,
+    img4: EmployeeDirectoryImg,
     img5: WeatherDashboardImg,
     img6: PasswordGeneratorImg,
+    img7: BurgerAppImg,
   });
 
   function handleButtonClick(event) {
@@ -65,7 +67,7 @@ function App() {
     const buttonName = event.target.id;
 
     if (buttonName === "1") {
-      window.open("https://joshtrev.github.io/Employee-Directory/", '_blank');
+      window.open("http://codecoach0.herokuapp.com/", '_blank');
     }
     else if (buttonName === "2") {
       window.open("https://trip-wishlist.herokuapp.com/", '_blank');
@@ -74,13 +76,16 @@ function App() {
       window.open("https://joshtrev.github.io/BetterMe/", '_blank');
     }
     else if (buttonName === "4") {
-      window.open("https://github.com/JoshTrev/Eat-Da-Burger-", '_blank');
+      window.open("https://joshtrev.github.io/Employee-Directory/", '_blank');
     }
     else if (buttonName === "5") {
       window.open("https://joshtrev.github.io/Weather-Dashboard/", '_blank');
     }
     else if (buttonName === "6") {
       window.open("https://joshtrev.github.io/PasswordGeneratorHomework/", '_blank');
+    }
+    else if (buttonName === "7") {
+      window.open("https://github.com/JoshTrev/Eat-Da-Burger-", '_blank');
     }
   }
 
@@ -108,6 +113,7 @@ function App() {
             portfolioImg4={portfolioProp.img4}
             portfolioImg5={portfolioProp.img5}
             portfolioImg6={portfolioProp.img6}
+            portfolioImg7={portfolioProp.img7}
             onClick={handleButtonClick2}
           />
         }

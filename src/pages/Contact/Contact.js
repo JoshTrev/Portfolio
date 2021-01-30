@@ -5,7 +5,7 @@ import "./Contact.css";
 function Contact(props) {
     const [isEmailSent, setIsEmailSent] = useState({
         emailSent: "NotSent"
-      });
+    });
 
     function sendEmail(e) {
         e.preventDefault();
@@ -23,13 +23,19 @@ function Contact(props) {
 
     return (
         <>
-            <main className="container bg-light border rounded container1" id="contactContainer">
 
-                <form onSubmit={sendEmail} >
+
+            <form onSubmit={sendEmail} >
+
+                <section className="container bg-light border rounded container1" id="contactContainer1">
 
                     <div id="Header2" className={isEmailSent.emailSent === "Sent" ? "Sent" : "NotSent"}>
-                        <h1>Contact</h1>
+                        <h1>Contact Me</h1>
                     </div>
+
+                </section>
+
+                <section className="container bg-light border rounded container1" id="contactContainer2">
 
                     <section className={isEmailSent.emailSent === "Sent" ? "Sent form-group" : "NotSent form-group"} >
                         <label htmlFor="exampleFormControlInput1">Name</label>
@@ -51,11 +57,21 @@ function Contact(props) {
                     <section className={isEmailSent.emailSent === "Sent" ? "NotSent form-group" : "Sent form-group"} >
                         <p id="thankYouMessage" className="rounded">Thank you for your submission!</p>
                     </section>
+                </section>
+            </form>
 
-                </form>
-
-            </main>
-
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             <br></br>
             <br></br>
             <br></br>

@@ -4,11 +4,13 @@ import "./AboutMe.css";
 function AboutMe(props) {
     return (
         <>
-            <main className="container bg-light border rounded" id="indexContainer">
-
+            <section className="container bg-light border rounded" id="indexContainer1">
                 <div id="Header">
                     <h1>About Me</h1>
                 </div>
+            </section>
+
+            <section className="container bg-light border rounded" id="indexContainer2">
 
                 <section id="section">
 
@@ -17,7 +19,7 @@ function AboutMe(props) {
                     </div>
 
                     <div className="col border-top border-bottom" id="Josh-text-container">
-                        
+
                         <div className="col border-bottom aboutbox">
                             <p className="indexText">My name is Josh Trevethan. I'm 22 years old and have recently finished the Penn LPS Full-Time Coding Boot Camp. I live in King of Prussia, Pennsylvania.</p>
                         </div>
@@ -39,16 +41,14 @@ function AboutMe(props) {
 
                 <section className="row row-cols-2 align-items-center" id="indexTextSmall">
                     <div className="col">
-                        <p className="indexTextSmall">Email: joshj438t@gmail.com</p>
+                        <a href="https://www.linkedin.com/in/joshua-trevethan/" className="indexTextSmall">LinkedIn: Joshua Trevethan</a>
                     </div>
                     <div className="col">
-                        <p className="indexTextSmall">GitHub: https://github.com/JoshTrev</p>
+                        <a href="https://github.com/JoshTrev" className="indexTextSmall">GitHub: JoshTrev</a>
                     </div>
                 </section>
-            </main>
+            </section>
 
-            <br></br>
-            <br></br>
             <br></br>
             <br></br>
         </>
