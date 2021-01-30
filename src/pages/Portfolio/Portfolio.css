@@ -38,13 +38,13 @@ p{
 }
 
 @media (min-width: 0px){
-    img{
-        height: 10rem;
+    .portfolioImg{
+        height: 12rem;
     }
 }
 
 @media (min-width: 500px){
-    img{
+    .portfolioImg{
         height: auto;
     }
 }
