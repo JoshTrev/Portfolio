@@ -37,6 +37,18 @@ p{
     padding-right: 1rem;
 }
 
+@media (min-width: 0px){
+    img{
+        height: 70%
+    }
+}
+
+@media (min-width: 500px){
+    img{
+        height: auto;
+    }
+}
+
 /* #blankspace{
     height: 1150px;
     width: 100%;
