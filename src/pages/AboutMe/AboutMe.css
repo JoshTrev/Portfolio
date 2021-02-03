@@ -1,121 +1,96 @@
-#indexContainer1{
-    width: 90%;
-    max-width: 1000px;
-    /* margin-top: 6rem; */
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
+#headerItem{
     height: 4.25rem;
-
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
-#indexContainer2{
-    width: 90%;
+.gridContainer{
     max-width: 1000px;
-    /* margin-top: 6rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+    margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.indexText{
+.gridContainerSkills{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item{
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.25);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.25);
+}
+
+p{
+    margin-bottom: 2rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.JoshImage{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.SkillImage{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.aboutMeText{
     font-size: 1.45rem;
     text-indent: 50px;
 }
 
-#indexTextSmall{
+.aboutMeTextSmall{
     clear: both;
     text-align: center;
     font-weight: 500;
 }
 
-.indexTextSmall{
-    font-size: 100%;
-    margin-bottom: 1rem;
-}
-
-#JoshPic{
-    max-width: 100%;
-    max-height: 100%;
-
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-}
-
-#Header{
-    width: 100%;
-    text-align:center;
+h1{
     padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-}
-
-.aboutbox{
-    padding-top: 18px;
-    padding-bottom: 18px;
 }
 
 @media (min-width: 0px){
-    .indexText{
-        font-size: 3.5vw;
+    .gridContainer{
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
-    .aboutbox{
-        padding-top: 4vw;
-        padding-bottom: 2vw;
-    }
-
-    #JoshPic-container{
-        float: left;
-        width: 100%;
-    }
-    
-    #Josh-text-container{
-        clear: both;
-        width: 100%;
-    }
-
-    #indexTextSmall{
-        font-size: 3vw;
+    .gridContainerSkills{
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 
-@media (min-width: 700px){
-    .indexText{
-        font-size: 2vw;
+@media (min-width: 1065px){
+    .gridContainer{
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .aboutbox{
-        padding-top: 1vw;
-        padding-bottom: 1vw;
-    }
-
-    #JoshPic-container{
-        float: left;
-        width: 50%;
-    }
-    
-    #Josh-text-container{
-        float: left;
-        clear: none;
-        width: 50%;
-    }
-
-    #indexTextSmall{
-        font-size: 100%;
-        padding-top: 1rem;
-    }
-}
-
-@media (min-width: 1128px){
-    .indexText{
-        font-size: 1.45rem;
-    }
-
-    .aboutbox{
-        padding-top: 18px;
-        padding-bottom: 18px;
+    .gridContainerSkills{
+        margin-left: auto;
+        margin-right: auto;
     }
 }

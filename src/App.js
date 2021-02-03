@@ -16,6 +16,20 @@ import WeatherDashboardImg from "./assets/img/WeatherDashboardImg.png";
 import PasswordGeneratorImg from "./assets/img/PasswordGeneratorImg.png";
 import CodingCoachImg from "./assets/img/CodingCoachImage.png";
 
+import BootstrapImg from "./assets/SkillsImages/bootstrap.png";
+import CSS3Img from "./assets/SkillsImages/css3.png";
+import ExpressImg from "./assets/SkillsImages/Express.png";
+import GitHubImg from "./assets/SkillsImages/github.jpg";
+import HerokuImg from "./assets/SkillsImages/Heroku.png";
+import HTML5Img from "./assets/SkillsImages/html5.png";
+import jQueryImg from "./assets/SkillsImages/jQuery.png";
+import JavaScriptImg from "./assets/SkillsImages/JS.png";
+import MERNImg from "./assets/SkillsImages/mern.jpg";
+import MongoDBImg from "./assets/SkillsImages/mongodb.png";
+import MySQLImg from "./assets/SkillsImages/MySQL.jpg";
+import NodeImg from "./assets/SkillsImages/nodeJS.png";
+import ReactImg from "./assets/SkillsImages/React.png";
+
 function App() {
   const [page, setPage] = useState({
     currentPage: "AboutMe"
@@ -28,6 +42,21 @@ function App() {
   });
   const [footerProp, setfooterProp] = useState({
     content: "Footer Test!"
+  });
+  const [aboutMeProp, setaboutMeProp] = useState({
+    img1: HTML5Img,
+    img2: CSS3Img,
+    img3: JavaScriptImg,
+    img4: MySQLImg,
+    img5: MongoDBImg,
+    img6: ExpressImg,
+    img7: ReactImg,
+    img8: NodeImg,
+    img9: GitHubImg,
+    img10: HerokuImg,
+    img11: BootstrapImg,
+    img12: jQueryImg,
+    img13: MERNImg,
   });
   const [portfolioProp, setportfolioProp] = useState({
     img1: CodingCoachImg,
@@ -100,7 +129,21 @@ function App() {
       <main>
         <div className={dropDown.dropDownActive === "Active" ? "blockSmall" : "blockLarge"}></div>
         {page.currentPage === "AboutMe" &&
-          <AboutMe aboutMeImg={headerProp.img} />
+          <AboutMe aboutMeImg={headerProp.img}
+          skillsImg1={aboutMeProp.img1}
+          skillsImg2={aboutMeProp.img2}
+          skillsImg3={aboutMeProp.img3}
+          skillsImg4={aboutMeProp.img4}
+          skillsImg5={aboutMeProp.img5}
+          skillsImg6={aboutMeProp.img6}
+          skillsImg7={aboutMeProp.img7}
+          skillsImg8={aboutMeProp.img8}
+          skillsImg9={aboutMeProp.img9}
+          skillsImg10={aboutMeProp.img10}
+          skillsImg11={aboutMeProp.img11}
+          skillsImg12={aboutMeProp.img12}
+          skillsImg13={aboutMeProp.img13}
+          />
         }
         {page.currentPage === "Contact" &&
           <Contact />

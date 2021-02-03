@@ -76,6 +76,12 @@ function Contact(props) {
             <br></br>
             <br></br>
             <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
 
         </>
     )
