@@ -4,15 +4,15 @@ import "./AboutMe.css";
 function AboutMe(props) {
     return (
         <>
-            <section className="gridContainer" id="headerItem">
+            <section className="AboutMeGridContainer" id="headerItem">
                 <div className="item rounded bg-light border" >
                     <h1>About Me</h1>
                 </div>
             </section>
 
-            <section className="gridContainer">
+            <section className="AboutMeGridContainer">
                 <div>
-                    <div className="item rounded bg-light border">
+                    <div className="item rounded imageEffect">
                         <img src={props.aboutMeImg} alt="Picture of Josh" className="JoshImage" />
                     </div>
                 </div>
@@ -24,50 +24,50 @@ function AboutMe(props) {
                 </div>
             </section>
 
-            <section className="gridContainer" id="headerItem">
+            <section className="AboutMeGridContainer" id="headerItem">
                 <div className="item rounded bg-light border" >
                     <h1>Technical Skills</h1>
                 </div>
             </section>
 
             <section className="gridContainerSkills">
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg1} alt="HTML5" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg2} alt="CSS3" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg3} alt="JavaScript" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg4} alt="MySQL" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg5} alt="MongoDB" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg6} alt="Express" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg7} alt="React" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg8} alt="Node" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg9} alt="GitHub" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg10} alt="Heroku" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg11} alt="Bootstrap" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg12} alt="jQuery" className="SkillImage" />
                 </div>
-                <div className="item rounded skill">
+                <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg13} alt="MERN" className="SkillImage" />
                 </div>
             </section>
@@ -77,14 +77,14 @@ function AboutMe(props) {
 
 
 
-            <section className="gridContainer">
+            {/* <section className="gridContainer">
                 <div className="item rounded bg-light border">
                     <a href="https://www.linkedin.com/in/joshua-trevethan/" className="aboutMeTextSmall">LinkedIn: Joshua Trevethan</a>
                 </div>
                 <div className="item rounded bg-light border">
                     <a href="https://github.com/JoshTrev" className="aboutMeTextSmall">GitHub: JoshTrev</a>
                 </div>
-            </section>
+            </section> */}
 
             <br></br>
             <br></br>

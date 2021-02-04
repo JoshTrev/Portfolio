@@ -23,14 +23,14 @@ function Contact(props) {
 
     return (
         <>
-            <section className="gridContainer" id="headerItem">
+            <section className="ContactMeGridContainer" id="headerItem">
                 <div className="item rounded bg-light border" >
                     <h1>Contact Me</h1>
                 </div>
             </section>
 
             <form onSubmit={sendEmail} >
-                <section className="container bg-light border rounded container1" id="contactContainer2">
+                <section className="bg-light border rounded" id="contactContainerForm">
 
                     <section className={isEmailSent.emailSent === "Sent" ? "Sent form-group" : "NotSent form-group"} >
                         <label htmlFor="exampleFormControlInput1">Name</label>
