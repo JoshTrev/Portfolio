@@ -1,13 +1,25 @@
-#contactContainer1{
-    width: 90%;
+#headerItem{
+    height: 4.25rem;
+    text-align: center;
+}
+
+.gridContainer{
     max-width: 1000px;
-    /* margin-top: 7.5rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2em;
+    margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1rem;
-    height: 4.25rem;
+}
 
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+.item{
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.25);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.25);
 }
 
 #contactContainer2{
@@ -18,13 +30,12 @@
     margin-right: auto;
     padding-top: 0.5rem;
 
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-}
-
-#Header2{
-    width: 100%;
-    text-align:center;
-    padding-top: 0.4rem;
+    -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.25);
+    -moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.25);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
+                -5px -5px 15px rgba(255, 255, 255, 0.25);
 }
 
 #submitButton{
@@ -61,10 +72,6 @@
     /* background-color: #343a40; */
     text-align: center;
     font-size: 25px;
-    margin-top: 11rem;
-    margin-bottom: 11rem;
-    margin-left: 16rem;
-    margin-right: 16rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-top: 9rem !important;
+    margin-bottom: 9.2rem !important;
 }

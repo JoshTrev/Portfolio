@@ -5,12 +5,10 @@ import "./Portfolio.css";
 function Portfolio(props) {
     return (
         <>
-            <section className="container bg-light border rounded" id="portfolioContainer1">
-
-                <div id="Header3">
+            <section className="gridContainer" id="headerItem">
+                <div className="item rounded bg-light border" >
                     <h1>Projects Portfolio</h1>
                 </div>
-
             </section>
 
             <div className="Project bg-light border rounded">
