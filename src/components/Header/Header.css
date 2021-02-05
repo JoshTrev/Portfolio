@@ -194,7 +194,7 @@ li:nth-of-type(2):hover ~ .underbar{
     box-shadow: 0 2px 5px rgb(37, 255, 255, 1);
 }
 li:nth-of-type(3):hover ~ .underbar{
-    right: 85px;
+    right: 84px;
     width: 60px;
     height: 1px;
     background: rgb(37, 255, 255, 1);

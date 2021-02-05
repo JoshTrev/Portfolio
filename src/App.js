@@ -160,7 +160,7 @@ function App() {
           skillsImg13={ResumeProp.img13}
           skillsImg13={ResumeProp.img13}
           resumeImg1={ResumeProp.resumeImg1}
-          resumeImg2={ResumeProp.resumeImg1}
+          resumeImg2={ResumeProp.resumeImg2}
           />
         }
         {page.currentPage === "Portfolio" &&
