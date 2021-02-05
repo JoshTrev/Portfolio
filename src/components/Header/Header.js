@@ -18,8 +18,12 @@ function Header(props) {
                             <button onClick={props.onClick} id="Portfolio" className={props.currentPage === "Portfolio" ? "buttonActive" : "buttonNotActive"}>Portfolio</button>
                         </li>
                         <li className="nav-item">
+                            <button onClick={props.onClick} id="Resume" className={props.currentPage === "Resume" ? "buttonActive" : "buttonNotActive"}>Resume</button>
+                        </li>
+                        <li className="nav-item">
                             <button onClick={props.onClick} id="Contact" className={props.currentPage === "Contact" ? "buttonActive" : "buttonNotActive"}>Contact</button>
                         </li>
+                        <div className="underbar"></div>
                     </ul>
                 </div>
             </nav>
@@ -28,11 +32,25 @@ function Header(props) {
                 <div className="skinnyBar2"></div>
 
                 <div id="dropdown">
-                    <button onClick={props.onClick} id="AboutMe2" className={props.currentPage === "AboutMe" ? "buttonActive" : "buttonNotActive"}>About</button>
+                    <button onClick={props.onClick} id="AboutMe2" className={props.currentPage === "AboutMe" ? "buttonActive" : "buttonNotActive"}>
+                    About
+                    <span></span>
+                    </button>
 
-                    <button onClick={props.onClick} id="Portfolio2" className={props.currentPage === "Portfolio" ? "buttonActive" : "buttonNotActive"}>Portfolio</button>
+                    <button onClick={props.onClick} id="Portfolio2" className={props.currentPage === "Portfolio" ? "buttonActive" : "buttonNotActive"}>
+                    Portfolio
+                    <span></span>
+                    </button>
 
-                    <button onClick={props.onClick} id="Contact2" className={props.currentPage === "Contact" ? "buttonActive" : "buttonNotActive"}>Contact</button>
+                    <button onClick={props.onClick} id="Resume2" className={props.currentPage === "Resume" ? "buttonActive" : "buttonNotActive"}>
+                    Resume
+                    <span></span>
+                    </button>
+
+                    <button onClick={props.onClick} id="Contact2" className={props.currentPage === "Contact" ? "buttonActive" : "buttonNotActive"}>
+                    Contact
+                    <span></span>
+                    </button>
                 </div>
             </div>
         </>

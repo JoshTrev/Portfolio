@@ -1,4 +1,4 @@
-#AboutMe, #Portfolio, #Contact {
+#AboutMe, #Portfolio, #Contact, #Resume {
     float: right;
     background: none!important;
     border: none;
@@ -6,9 +6,10 @@
     margin-left: 1rem;
     outline: none !important;
     box-shadow: none;
+    overflow: hidden;
 }
 
-#AboutMe2, #Portfolio2, #Contact2 {
+#AboutMe2, #Portfolio2, #Contact2, #Resume2 {
     float: left;
     background: none!important;
     border: none;
@@ -19,10 +20,13 @@
 }
 
 #dropdown{
+    margin-top: 60px;
+    position: fixed;
     background-color:#303030;
     width: 100%;
-    height: 7.5rem;
+    height: 10rem;
     padding-top: 0.5rem;
+    z-index: 200;
 }
 
 .buttonActive{
@@ -45,6 +49,13 @@
     font-size: 1.2rem;
 }
 
+#Resume2{
+    clear: both;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
 #Contact2{
     clear: both;
     width: 100%;
@@ -53,6 +64,8 @@
 }
 
 .skinnyBar2{
+    z-index: 100;
+    position: fixed;
     background-color: #25ffff;
     height: 60px;
     width: 100%;
@@ -64,4 +77,133 @@ span{
 
 .DropDownNotActive{
     display: none;
+}
+
+/* Drop Down Link Underline Effects */
+
+#AboutMe2 span{
+    position: relative;
+    display: block;
+    transition: 0.25s ease;
+}
+
+#AboutMe2 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #25ffff;
+    box-shadow: 0 2px 5px rgb(37, 255, 255, 1);
+}
+
+#AboutMe2:hover span:nth-child(1){
+    width: 25%;
+    transform: translateX(150%);
+}
+
+
+
+#Portfolio2 span{
+    position: relative;
+    display: block;
+    transition: 0.25s ease;
+}
+
+#Portfolio2 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #25ffff;
+    box-shadow: 0 2px 5px rgb(37, 255, 255, 1);
+}
+
+#Portfolio2:hover span:nth-child(1){
+    width: 25%;
+    transform: translateX(150%);
+}
+
+
+
+#Resume2 span{
+    position: relative;
+    display: block;
+    transition: 0.25s ease;
+}
+
+#Resume2 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #25ffff;
+    box-shadow: 0 2px 5px rgb(37, 255, 255, 1);
+}
+
+#Resume2:hover span:nth-child(1){
+    width: 25%;
+    transform: translateX(150%);
+}
+
+
+
+#Contact2 span{
+    position: relative;
+    display: block;
+    transition: 0.25s ease;
+}
+
+#Contact2 span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #25ffff;
+    box-shadow: 0 2px 5px rgb(37, 255, 255, 1);
+}
+
+#Contact2:hover span:nth-child(1){
+    width: 25%;
+    transform: translateX(150%);
+}
+
+/* Top Nav Links Underline Effects */
+
+.underbar{
+    width: 0;
+    height: 1px;
+    background: rgba(100,100,200,0);
+    right: 0px;
+    bottom: 15px;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+li:nth-of-type(1):hover ~ .underbar{
+    right: 231px;
+    width: 50px;
+    height: 1px;
+    background: rgb(37, 255, 255, 1);
+    box-shadow: 0 2px 5px rgb(37, 255, 255, 1);
+}
+li:nth-of-type(2):hover ~ .underbar{
+    right: 155px;
+    width: 66px;
+    height: 1px;
+    background: rgb(37, 255, 255, 1);
+    box-shadow: 0 2px 5px rgb(37, 255, 255, 1);
+}
+li:nth-of-type(3):hover ~ .underbar{
+    right: 85px;
+    width: 60px;
+    height: 1px;
+    background: rgb(37, 255, 255, 1);
+    box-shadow: 0 2px 5px rgb(37, 255, 255, 1);
+}
+li:nth-of-type(4):hover ~ .underbar{
+    right: 13px;
+    width: 60px;
+    height: 1px;
+    background: rgb(37, 255, 255, 1);
+    box-shadow: 0 2px 5px rgb(37, 255, 255, 1);
 }

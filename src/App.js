@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Contact from "./pages/Contact/Contact";
+import Resume from "./pages/Resume/Resume";
 import Portfolio from "./pages/Portfolio/Portfolio";
 
 import "./App.css"
@@ -76,6 +77,9 @@ function App() {
     else if (buttonName === "Contact" || buttonName === "Contact2") {
       setPage({ currentPage: "Contact" });
     }
+    else if (buttonName === "Resume" || buttonName === "Resume2") {
+      setPage({ currentPage: "Resume" });
+    }
     else if (buttonName === "Portfolio" || buttonName === "Portfolio2") {
       setPage({ currentPage: "Portfolio" });
     }
@@ -147,6 +151,9 @@ function App() {
         }
         {page.currentPage === "Contact" &&
           <Contact />
+        }
+        {page.currentPage === "Resume" &&
+          <Resume />
         }
         {page.currentPage === "Portfolio" &&
           <Portfolio
