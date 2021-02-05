@@ -13,16 +13,6 @@
     margin-right: auto;
 }
 
-.gridContainerSkills{
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 2em;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .item{
     -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5),
                 -5px -5px 15px rgba(255, 255, 255, 0.25);
@@ -33,14 +23,6 @@
 }
 
 .JoshImage{
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.SkillImage{
     width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -68,9 +50,6 @@ h1{
     padding-top: 0.4rem;
 }
 
-
-
-
 .imageEffect{
     position: relative;
     display: block;
@@ -91,9 +70,6 @@ h1{
 .imageEffect:hover::after{
     left: 100%;
 }
-
-
-
 
 @media (min-width: 0px){
     .AboutMeGridContainer{

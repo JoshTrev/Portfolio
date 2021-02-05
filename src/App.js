@@ -31,6 +31,9 @@ import MySQLImg from "./assets/SkillsImages/MySQL.jpg";
 import NodeImg from "./assets/SkillsImages/nodeJS.png";
 import ReactImg from "./assets/SkillsImages/React.png";
 
+import ResumeImg1 from "./assets/img/Resume1.png"
+import ResumeImg2 from "./assets/img/Resume2.png"
+
 function App() {
   const [page, setPage] = useState({
     currentPage: "AboutMe"
@@ -44,7 +47,7 @@ function App() {
   const [footerProp, setfooterProp] = useState({
     content: "Footer Test!"
   });
-  const [aboutMeProp, setaboutMeProp] = useState({
+  const [ResumeProp, setresumeProp] = useState({
     img1: HTML5Img,
     img2: CSS3Img,
     img3: JavaScriptImg,
@@ -58,6 +61,8 @@ function App() {
     img11: BootstrapImg,
     img12: jQueryImg,
     img13: MERNImg,
+    resumeImg1: ResumeImg1,
+    resumeImg2: ResumeImg2,
   });
   const [portfolioProp, setportfolioProp] = useState({
     img1: CodingCoachImg,
@@ -133,27 +138,30 @@ function App() {
       <main>
         <div className={dropDown.dropDownActive === "Active" ? "blockSmall" : "blockLarge"}></div>
         {page.currentPage === "AboutMe" &&
-          <AboutMe aboutMeImg={headerProp.img}
-          skillsImg1={aboutMeProp.img1}
-          skillsImg2={aboutMeProp.img2}
-          skillsImg3={aboutMeProp.img3}
-          skillsImg4={aboutMeProp.img4}
-          skillsImg5={aboutMeProp.img5}
-          skillsImg6={aboutMeProp.img6}
-          skillsImg7={aboutMeProp.img7}
-          skillsImg8={aboutMeProp.img8}
-          skillsImg9={aboutMeProp.img9}
-          skillsImg10={aboutMeProp.img10}
-          skillsImg11={aboutMeProp.img11}
-          skillsImg12={aboutMeProp.img12}
-          skillsImg13={aboutMeProp.img13}
-          />
+          <AboutMe aboutMeImg={headerProp.img}/>
         }
         {page.currentPage === "Contact" &&
           <Contact />
         }
         {page.currentPage === "Resume" &&
-          <Resume />
+          <Resume
+          skillsImg1={ResumeProp.img1}
+          skillsImg2={ResumeProp.img2}
+          skillsImg3={ResumeProp.img3}
+          skillsImg4={ResumeProp.img4}
+          skillsImg5={ResumeProp.img5}
+          skillsImg6={ResumeProp.img6}
+          skillsImg7={ResumeProp.img7}
+          skillsImg8={ResumeProp.img8}
+          skillsImg9={ResumeProp.img9}
+          skillsImg10={ResumeProp.img10}
+          skillsImg11={ResumeProp.img11}
+          skillsImg12={ResumeProp.img12}
+          skillsImg13={ResumeProp.img13}
+          skillsImg13={ResumeProp.img13}
+          resumeImg1={ResumeProp.resumeImg1}
+          resumeImg2={ResumeProp.resumeImg1}
+          />
         }
         {page.currentPage === "Portfolio" &&
           <Portfolio
