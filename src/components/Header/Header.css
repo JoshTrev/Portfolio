@@ -1,3 +1,8 @@
+.JoshLink{
+    pointer-events: none;
+    cursor: default;
+}
+
 #AboutMe, #Portfolio, #Contact, #Resume {
     float: right;
     background: none!important;

@@ -47,7 +47,7 @@ function Contact(props) {
                         <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3" name="message" ></textarea>
                     </section>
 
-                    <button type="submit" id="submitButton" className={isEmailSent.emailSent === "Sent" ? "Sent" : "NotSent"} >Submit</button>
+                    <button type="submit" id="submitButton" className={isEmailSent.emailSent === "Sent" ? "Sent imageEffect" : "NotSent imageEffect"} >Submit</button>
 
                     <section className={isEmailSent.emailSent === "Sent" ? "NotSent form-group" : "Sent form-group"} >
                         <p id="thankYouMessage" className="rounded">Thank you for your submission!</p>
