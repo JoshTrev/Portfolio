@@ -27,7 +27,7 @@ function AboutMe(props) {
 
             <section className="AboutMeGridContainer">
                 <div>
-                    <a href="https://www.linkedin.com/in/joshua-trevethan/" className="LinkButton LinkButtonAboutMe item border">
+                    <a href="https://www.linkedin.com/in/joshua-trevethan/" target="_blank" className="LinkButton LinkButtonAboutMe item border">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -36,7 +36,7 @@ function AboutMe(props) {
                     </a>
                 </div>
                 <div>
-                    <a href="https://github.com/JoshTrev" className="LinkButton LinkButtonAboutMe item border">
+                    <a href="https://github.com/JoshTrev" target="_blank" className="LinkButton LinkButtonAboutMe item border">
                     <span></span>
                     <span></span>
                     <span></span>

@@ -50,6 +50,9 @@ function Resume(props) {
                 <div className="item rounded skill imageEffect">
                     <img src={props.skillsImg13} alt="MERN" className="SkillImage" />
                 </div>
+                <div className="item rounded skill imageEffect">
+                    <img src={props.skillsImg14} alt="Visual Studio Code" className="SkillImage" />
+                </div>
             </section>
 
             <section className="ResumeGridContainer" id="headerItem">

@@ -12,7 +12,6 @@ import JoshPicImg from "./assets/img/JoshPic.JPG";
 import EmployeeDirectoryImg from "./assets/img/EmployeeDirectory.png";
 import TripWishlistImg from "./assets/img/Trip-Wishlist.png";
 import BetterMeImg from "./assets/img/BetterMeImg.png";
-import BurgerAppImg from "./assets/img/BurgerApp.png";
 import WeatherDashboardImg from "./assets/img/WeatherDashboardImg.png";
 import PasswordGeneratorImg from "./assets/img/PasswordGeneratorImg.png";
 import CodingCoachImg from "./assets/img/CodingCoachImage.png";
@@ -30,6 +29,7 @@ import MongoDBImg from "./assets/SkillsImages/mongodb.png";
 import MySQLImg from "./assets/SkillsImages/MySQL.jpg";
 import NodeImg from "./assets/SkillsImages/nodeJS.png";
 import ReactImg from "./assets/SkillsImages/React.png";
+import VisualStudioCodeImg from "./assets/SkillsImages/VisualStudioCode.png";
 
 import ResumeImg1 from "./assets/img/Resume1.png"
 import ResumeImg2 from "./assets/img/Resume2.png"
@@ -61,17 +61,17 @@ function App() {
     img11: BootstrapImg,
     img12: jQueryImg,
     img13: MERNImg,
+    img14: VisualStudioCodeImg,
     resumeImg1: ResumeImg1,
     resumeImg2: ResumeImg2,
   });
   const [portfolioProp, setportfolioProp] = useState({
-    img1: CodingCoachImg,
-    img2: TripWishlistImg,
-    img3: BetterMeImg,
-    img4: EmployeeDirectoryImg,
-    img5: WeatherDashboardImg,
-    img6: PasswordGeneratorImg,
-    img7: BurgerAppImg,
+    img1: WeatherDashboardImg,
+    img2: EmployeeDirectoryImg,
+    img3: PasswordGeneratorImg,
+    img4: BetterMeImg,
+    img5: TripWishlistImg,
+    img6: CodingCoachImg,
   });
 
   function handleButtonClick(event) {
@@ -105,25 +105,22 @@ function App() {
     const buttonName = event.target.id;
 
     if (buttonName === "1") {
-      window.open("http://codecoach0.herokuapp.com/", '_blank');
-    }
-    else if (buttonName === "2") {
-      window.open("https://trip-wishlist.herokuapp.com/", '_blank');
-    }
-    else if (buttonName === "3") {
-      window.open("https://joshtrev.github.io/BetterMe/", '_blank');
-    }
-    else if (buttonName === "4") {
-      window.open("https://joshtrev.github.io/Employee-Directory/", '_blank');
-    }
-    else if (buttonName === "5") {
       window.open("https://joshtrev.github.io/Weather-Dashboard/", '_blank');
     }
-    else if (buttonName === "6") {
+    else if (buttonName === "2") {
+      window.open("https://joshtrev.github.io/Employee-Directory/", '_blank');
+    }
+    else if (buttonName === "3") {
       window.open("https://joshtrev.github.io/PasswordGeneratorHomework/", '_blank');
     }
-    else if (buttonName === "7") {
-      window.open("https://github.com/JoshTrev/Eat-Da-Burger-", '_blank');
+    else if (buttonName === "4") {
+      window.open("https://joshtrev.github.io/BetterMe/", '_blank');
+    }
+    else if (buttonName === "5") {
+      window.open("https://trip-wishlist.herokuapp.com/", '_blank');
+    }
+    else if (buttonName === "6") {
+      window.open("http://codecoach0.herokuapp.com/", '_blank');
     }
   }
 
@@ -159,6 +156,7 @@ function App() {
           skillsImg12={ResumeProp.img12}
           skillsImg13={ResumeProp.img13}
           skillsImg13={ResumeProp.img13}
+          skillsImg14={ResumeProp.img14}
           resumeImg1={ResumeProp.resumeImg1}
           resumeImg2={ResumeProp.resumeImg2}
           />
@@ -171,7 +169,6 @@ function App() {
             portfolioImg4={portfolioProp.img4}
             portfolioImg5={portfolioProp.img5}
             portfolioImg6={portfolioProp.img6}
-            portfolioImg7={portfolioProp.img7}
             onClick={handleButtonClick2}
           />
         }
