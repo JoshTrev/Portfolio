@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.737f8e76.chunk.css",
-    "main.js": "/Portfolio/static/js/main.339aeaa9.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.339aeaa9.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.ebf4e2fc.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.ebf4e2fc.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.9c6eec43.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.9c6eec43.js.map",
     "static/css/2.150d169a.chunk.css": "/Portfolio/static/css/2.150d169a.chunk.css",
@@ -14,17 +14,17 @@
     "static/js/2.489e6217.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.489e6217.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Portfolio/static/media/BackgroundPic.c5e06d5c.jpg",
     "static/media/BetterMeImg.96ca39e9.png": "/Portfolio/static/media/BetterMeImg.96ca39e9.png",
-    "static/media/BurgerApp.accd1cd5.png": "/Portfolio/static/media/BurgerApp.accd1cd5.png",
     "static/media/CodingCoachImage.ee582913.png": "/Portfolio/static/media/CodingCoachImage.ee582913.png",
     "static/media/EmployeeDirectory.6b830653.png": "/Portfolio/static/media/EmployeeDirectory.6b830653.png",
     "static/media/Heroku.a9fb20d7.png": "/Portfolio/static/media/Heroku.a9fb20d7.png",
     "static/media/JoshPic.b0748521.JPG": "/Portfolio/static/media/JoshPic.b0748521.JPG",
     "static/media/MySQL.c2bdae86.jpg": "/Portfolio/static/media/MySQL.c2bdae86.jpg",
-    "static/media/PasswordGeneratorImg.b60901b9.png": "/Portfolio/static/media/PasswordGeneratorImg.b60901b9.png",
+    "static/media/PasswordGeneratorImg.b351ed98.png": "/Portfolio/static/media/PasswordGeneratorImg.b351ed98.png",
     "static/media/React.0c27dfa2.png": "/Portfolio/static/media/React.0c27dfa2.png",
     "static/media/Resume1.80c0d1fb.png": "/Portfolio/static/media/Resume1.80c0d1fb.png",
     "static/media/Resume2.6a422a88.png": "/Portfolio/static/media/Resume2.6a422a88.png",
     "static/media/Trip-Wishlist.6e34c862.png": "/Portfolio/static/media/Trip-Wishlist.6e34c862.png",
+    "static/media/VisualStudioCode.d662e5e6.png": "/Portfolio/static/media/VisualStudioCode.d662e5e6.png",
     "static/media/WeatherDashboardImg.6c2533bd.png": "/Portfolio/static/media/WeatherDashboardImg.6c2533bd.png",
     "static/media/css3.b19a087e.png": "/Portfolio/static/media/css3.b19a087e.png",
     "static/media/github.696c2d9d.jpg": "/Portfolio/static/media/github.696c2d9d.jpg",
@@ -38,6 +38,6 @@
     "static/css/2.150d169a.chunk.css",
     "static/js/2.489e6217.chunk.js",
     "static/css/main.737f8e76.chunk.css",
-    "static/js/main.339aeaa9.chunk.js"
+    "static/js/main.ebf4e2fc.chunk.js"
   ]
 }
